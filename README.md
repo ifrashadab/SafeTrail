@@ -30,4 +30,6 @@ npm run dev
 ### 4. Open in Browser
 By default, the app will be available at: http://127.0.0.1:5001
 
+### 5. Live : https://safetrail-2.onrender.com/
+
 
