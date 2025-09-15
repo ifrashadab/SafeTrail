@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertTouristProfileSchema, insertDigitalIdSchema } from "@shared/schema";
+import { insertTouristProfileSchema, insertDigitalIdSchema } from "../shared/schema";
 import { randomBytes } from "crypto";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -24,8 +24,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
           fullName,
           nationality: "Indian",
           travelerType: "domestic",
+          accommodation: "Not Provided",  // ✅ Added default value
           profileCompleted: false,
-        });
+        });        
       }
 
       res.json({ 
