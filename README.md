@@ -1,35 +1,40 @@
-# SafeTrail  
+# 🌍 SafeTrail  
 
-SafeTrail is a  safety-focused web app for travellers.  
-This repository contains the source code.
+SafeTrail is a **safety-focused web application for travellers**, designed to provide secure and reliable tools for safe journeys.  
+This repository contains the complete source code of the project.  
+
+---
 
 ## 🚀 Getting Started  
 
-Follow these steps to set up the project locally.
+Follow these steps to set up the project locally:  
 
-### 1. Clone or Download the Repository  
-
+### 1️⃣ Clone or Download the Repository  
 Clone with Git:
 
-git clone https://github.com/VishalX9/SafeTrail.git
+git clone https://github.com/ifrashadab/SafeTrail.git
+
 cd SafeTrail
+
 Or download as a ZIP from the green “Code” button on GitHub and extract it.
 
-### 2. Install Dependencies
-Make sure you have Node.js installed.
+### 2️⃣ Install Dependencies
+Make sure you have Node.js (>=18) installed.
+npm install
 
-npm install in the terminal of downloaded folder 
-
-npm install --save-dev cross-env
-
-
-### 3. Run the Development Server
-
+### 3️⃣ Run the Development Server
 npm run dev
 
-### 4. Open in Browser
-By default, the app will be available at: http://127.0.0.1:5000
+### 4️⃣ Open in Browser
 
-### 5. Live : https://safetrail-2.onrender.com/
+  The app will be available at:
+👉 http://localhost:5001
 
+### 5️⃣ Live Deployment
+🌐  [SafeTrail on Render](https://safetrail-2.onrender.com/)
 
+ ### 6️⃣ 📌 Tech Stack
+
+Frontend: React,TailwindCSS, Radix UI, Framer Motion <br>
+Backend: Express.js, Node.js<br>
+Others: Leaflet (maps), React Query, Vite<br>
