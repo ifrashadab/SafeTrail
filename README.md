@@ -20,6 +20,7 @@ Or download as a ZIP from the green “Code” button on GitHub and extract it.
 
 ### 2️⃣ Install Dependencies
 Make sure you have Node.js (>=18) installed.
+
 npm install
 
 ### 3️⃣ Run the Development Server
