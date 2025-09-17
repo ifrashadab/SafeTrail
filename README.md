@@ -32,7 +32,7 @@ npm run dev
 👉 http://localhost:5001
 
 ### 5️⃣ Live Deployment
-🌐  [SafeTrail on Render](https://safetrail-2.onrender.com/)
+🌐  [SafeTrail on Render](https://safetrail-3.onrender.com/)
 
  ### 6️⃣ 📌 Tech Stack
 
