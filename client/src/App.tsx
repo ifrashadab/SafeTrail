@@ -2,7 +2,7 @@ import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
-import { ToastProvider } from "@/components/ToastProvider"; // NEW: Add toast provider
+import { ToastProvider } from "@/components/ToastProvider"; 
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Login from "@/pages/Login";
 import Dashboard from "@/pages/Dashboard";
@@ -14,6 +14,7 @@ import AiAssistant from "@/pages/AiAssistant";
 import TravelerConnect from "@/pages/TravelerConnect";
 import NotFound from "@/pages/not-found";
 import { AuthorityMessenger } from "@/components/AuthorityMessenger"
+import AnomalyDetectionPage from "./pages/Anomaly";
 
 function Router() {
   return (
@@ -27,6 +28,8 @@ function Router() {
       <Route path="/ai-assistant" component={AiAssistant} />
       <Route path="/traveler-connect" component={TravelerConnect} />
        <Route path="/authority-messenger" component={AuthorityMessenger} />
+       <Route path="/anomaly-detection" component={AnomalyDetectionPage} />
+
       <Route component={NotFound} />
     </Switch>
   );
@@ -37,7 +40,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <ToastProvider /> {/* NEW: Add toast notifications */}
+        <ToastProvider /> 
         <Router />
       </TooltipProvider>
     </QueryClientProvider>
