@@ -116,7 +116,7 @@ const dashboardItems = [
     color: "bg-accent",
     urgent: false,
   },
-  // NEW: Added Anomaly Detection item
+
   {
     title: "Anomaly Detection",
     description: "AI-powered monitoring for unusual travel patterns and safety alerts",
@@ -127,13 +127,13 @@ const dashboardItems = [
   },
 ];
 
-// NEW: Anomaly Detection Component
+
 const AnomalyDetection = () => {
   const [anomalies, setAnomalies] = useState<AnomalyAlert[]>([]);
   const [isMonitoring, setIsMonitoring] = useState(true);
 
   useEffect(() => {
-    // Simulate real-time anomaly detection
+
     const mockAnomalies: AnomalyAlert[] = [
       {
         id: '1',
@@ -459,7 +459,7 @@ const Dashboard = () => {
     <div className="min-h-screen bg-background">
       <Navigation user={user} />
 
-      {/* Hero Section */}
+      
       <section className="relative bg-gradient-to-br from-primary to-blue-800 text-primary-foreground py-16">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30" 
@@ -528,12 +528,12 @@ const Dashboard = () => {
         </div>
       </section>
 
-      {/* Enhanced Dashboard Grid */}
+   
       <section className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Enhanced Safety Dashboard</h2>
           
-          {/* Enhanced Dashboard with New Tabs */}
+ 
           <Tabs defaultValue="overview" className="space-y-6">
             <TabsList className="grid w-full grid-cols-8">
               <TabsTrigger value="overview">Overview</TabsTrigger>
@@ -590,12 +590,12 @@ const Dashboard = () => {
               <MapComponent />
             </TabsContent>
 
-            {/* NEW: Anomaly Detection Tab - Link to separate page */}
+          
             <TabsContent value="anomaly">
               <AnomalyDetection />
             </TabsContent>
 
-            {/* NEW: Multilingual Support Tab */}
+           
             <TabsContent value="multilingual">
               <MultilingualSupport />
             </TabsContent>
@@ -619,7 +619,7 @@ const Dashboard = () => {
         </div>
       </section>
 
-      {/* Emergency Contact Banner */}
+     
       <section className="bg-destructive/5 border-t border-destructive/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-xl font-bold mb-4 text-destructive">
